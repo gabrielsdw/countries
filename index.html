@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações de Países</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Informações de Países</h1>
+
+        <div class="selector">
+            <label for="countrySelect">Selecione um País:</label>
+            <select id="countrySelect">
+                <option value="">Selecione um país</option>
+            </select>
+        </div>
+        
+        <div id="countryInfo" class="country-info">
+            <div class="country-header">
+                <img id="flag" class="flag" alt="Bandeira do País">
+                <h2 id="countryName"></h2>
+            </div>
+
+            <div class="country-details">
+                <p><strong>Capital:</strong> <span id="capital"></span></p>
+                <p><strong>Continente:</strong> <span id="continents"></span></p>
+                <p><strong>População:</strong> <span id="population"></span></p>
+                <p><strong>Área:</strong> <span id="area"></span> km²</p>
+                <p><strong>Moeda(s):</strong> <span id="currencies"></span></p>
+                <p><strong>Idioma(s):</strong> <span id="languages"></span></p>
+            </div>
+
+            <div class="border-countries">
+                <h3>Países Fronteiriços:</h3>
+                <div id="borderCountries" class="border-list">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
